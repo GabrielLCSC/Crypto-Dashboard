@@ -1,1 +1,99 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.pop {
+  font-family: "Poppins";
+}
+
+body main .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100vh;
+}
+body main .grid .a {
+  background-color: rgb(0, 0, 0);
+}
+body main .grid .a .logo {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+body main .grid .a .logo .img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 200px;
+}
+body main .grid .a .btn-dash {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+body main .grid .a .btn-dash .btn-a-dashboard {
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
+  display: inline-flex;
+  justify-content: center;
+  width: 260px;
+  border-radius: 10px;
+}
+body main .grid .a .btn-dash .btn-a-dashboard h3 {
+  margin-left: 10px;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+body main .grid .a .btn-dash .btn-a-dashboard img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 35px;
+}
+body main .grid .a .bloc-btn-a {
+  margin-top: 50px;
+  margin-left: 16%;
+}
+body main .grid .a .bloc-btn-a .btn-a {
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+}
+body main .grid .a .bloc-btn-a .btn-a h3 {
+  margin-left: 10px;
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: rgb(216, 216, 216);
+}
+body main .grid .a .bloc-btn-a .btn-a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30px;
+}
+body main .grid .a .bloc-btn-a .btn-a-log {
+  margin-top: 110px;
+  padding: 10px;
+  display: flex;
+}
+body main .grid .a .bloc-btn-a .btn-a-log h3 {
+  margin-left: 10px;
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: rgb(216, 216, 216);
+}
+body main .grid .a .bloc-btn-a .btn-a-log img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30px;
+}
+body main .grid .b {
+  background-color: rgb(255, 225, 0);
+  grid-column: 2/4;
+}
+body main .grid .c {
+  background-color: rgb(255, 0, 17);
+}/*# sourceMappingURL=style.css.map */
