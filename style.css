@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,13 +13,30 @@ html {
   font-family: "Poppins";
 }
 
+.inter {
+  font-family: "Inter";
+  font-weight: 400;
+}
+
 body {
   background-color: rgb(0, 0, 0);
+}
+body main img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 body main .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 100vh;
+}
+body main .grid .a {
+  position: fixed;
+  top: 0;
+  margin-left: 20px;
 }
 body main .grid .a .logo {
   margin-top: 30px;
@@ -91,12 +109,22 @@ body main .grid .a .bloc-btn-a .btn-a-log img {
   width: 30px;
 }
 body main .grid .b {
-  background-color: rgb(69, 0, 0);
+  margin-left: 20px;
   grid-column: 2/4;
 }
+body main .grid .b .price {
+  font-family: "Poppins";
+  color: rgb(160, 160, 160);
+  font-weight: 500;
+}
+body main .grid .b h2 {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
 body main .grid .b .header-b {
-  margin-left: 20px;
   margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
 }
 body main .grid .b .header-b h2 {
@@ -129,26 +157,100 @@ body main .grid .b .header-b .searchbar h3 {
 }
 body main .grid .b .flex-content-b {
   display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+body main .grid .b .flex-content-b h2 {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 700;
+}
+body main .grid .b .flex-content-b .cardbtc {
+  font-size: 1.4rem;
+  margin-left: 10px;
+  padding: 2px;
+  border-radius: 6px;
+  font-family: "Poppins";
+  color: #000000;
+  background-color: #f2ff00;
 }
 body main .grid .b .flex-content-b div {
+  margin: auto;
   display: flex;
   gap: 20px;
-  margin-left: 200px;
+  margin-left: 100px;
   background-color: rgb(65, 65, 65);
-  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 14px;
 }
 body main .grid .b .flex-content-b div .blackbg {
   font-family: "Poppins";
   background-color: #000000;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
   border-radius: 14px;
 }
 body main .grid .b .flex-content-b div h3 {
   color: white;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+}
+body main .grid .b .graphic {
+  width: 95%;
+}
+body main .grid .b .content-2-flex-b {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+body main .grid .b .transac-bottom {
+  margin-top: 20px;
+  padding: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(30, 30, 30);
+  width: 90%;
+  border-radius: 10px;
+}
+body main .grid .b .transac-bottom h2 {
+  font-weight: 400;
+}
+body main .grid .b .transac-bottom p {
+  margin-top: 4px;
+  color: white;
+}
+body main .grid .b .transac-bottom .interbleu {
+  color: #1970D6;
+  font-family: "Inter";
+}
+body main .grid .b .transac-bottom .intervert {
+  color: green;
+  font-family: "Inter";
+}
+body main .grid .b .transac-bottom .interviolet {
+  color: purple;
+  font-family: "Inter";
+}
+body main .grid .b .transac-bottom .intertrade {
+  font-family: "Inter";
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 18px;
+}
+body main .grid .b .transac-bottom img {
+  width: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body main .grid .b .transac-bottom .lezard {
+  width: 130px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 body main .grid .c h2 {
   margin-top: 20px;
@@ -225,7 +327,7 @@ body main .grid .c .transac-content-neg .c-text-2 p {
   font-size: 1.2rem;
 }
 body main .grid .c .asset {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-left: 13px;
   margin-right: 13px;
   background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
@@ -235,7 +337,7 @@ body main .grid .c .asset img {
   -o-object-fit: contain;
      object-fit: contain;
   margin-left: 30px;
-  width: 50px;
+  width: 65px;
 }
 body main .grid .c .asset p {
   margin-left: 30px;
@@ -252,10 +354,10 @@ body main .grid .c .asset .asset-flex {
 body main .grid .c .asset .asset-flex h3 {
   color: white;
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 body main .grid .c .asset2 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-left: 13px;
   margin-right: 13px;
   background: linear-gradient(99.56deg, #FAFF00 35.82%, #29ABE2 64.75%, rgba(255, 255, 255, 0.7) 91.33%);
@@ -266,7 +368,7 @@ body main .grid .c .asset2 img {
   -o-object-fit: contain;
      object-fit: contain;
   margin-left: 30px;
-  width: 45px;
+  width: 55px;
 }
 body main .grid .c .asset2 p {
   margin-left: 30px;
@@ -281,7 +383,7 @@ body main .grid .c .asset2 .asset-flex {
 }
 body main .grid .c .asset2 .asset-flex h3 {
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 body .usdt {
   -o-object-fit: contain;
@@ -307,4 +409,207 @@ body .eth {
   -o-object-fit: contain;
      object-fit: contain;
   width: 45px;
+}
+
+@media screen and (max-width: 1200px) {
+  body main .grid {
+    display: block;
+  }
+  body main .grid .a {
+    position: relative;
+    margin-left: 20px;
+  }
+  body main .grid .bloc-btn-a {
+    display: none;
+  }
+  body main .grid .b .flex-content-b {
+    display: block;
+    align-items: center;
+    margin-top: 20px;
+  }
+  body main .grid .b .flex-content-b h2 {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 700;
+  }
+  body main .grid .b .flex-content-b .cardbtc {
+    font-size: 1.4rem;
+    margin-left: 10px;
+    padding: 2px;
+    border-radius: 6px;
+    font-family: "Poppins";
+    color: #000000;
+    background-color: #f2ff00;
+    width: 35px;
+  }
+  body main .grid .b .flex-content-b div {
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    margin-left: 100px;
+    background-color: rgb(65, 65, 65);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 340px;
+    border-radius: 14px;
+  }
+  body main .grid .b .flex-content-b div .blackbg {
+    font-family: "Poppins";
+    background-color: #000000;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 14px;
+  }
+  body main .grid .b .flex-content-b div h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+  body main .grid .b .content-2-flex-b {
+    margin-top: 0px;
+  }
+  body main .grid .c .asset-contenant {
+    display: flex;
+  }
+}
+@media screen and (max-width: 550px) {
+  body main .grid {
+    display: block;
+  }
+  body main .grid .a {
+    position: relative;
+    margin-left: 20px;
+  }
+  body main .grid .bloc-btn-a {
+    display: none;
+  }
+  body main .grid .b .header-b {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+  }
+  body main .grid .b .header-b h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+    width: 200px;
+    margin-bottom: 30px;
+  }
+  body main .grid .b .header-b .searchbar {
+    margin-right: 30px;
+    margin-left: 0px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    display: inline-flex;
+    background-color: white;
+    width: 60%;
+    border-radius: 11px;
+  }
+  body main .grid .b .header-b .searchbar img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 25px;
+  }
+  body main .grid .b .header-b .searchbar h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  body main .grid .b .flex-content-b {
+    display: block;
+    align-items: center;
+    margin-top: 20px;
+  }
+  body main .grid .b .flex-content-b h2 {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 700;
+  }
+  body main .grid .b .flex-content-b .cardbtc {
+    font-size: 1.4rem;
+    margin-left: 10px;
+    padding: 2px;
+    border-radius: 6px;
+    font-family: "Poppins";
+    color: #000000;
+    background-color: #f2ff00;
+    width: 35px;
+  }
+  body main .grid .b .flex-content-b div {
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    background-color: rgb(65, 65, 65);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 340px;
+    border-radius: 14px;
+  }
+  body main .grid .b .flex-content-b div .blackbg {
+    font-family: "Poppins";
+    background-color: #000000;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 14px;
+  }
+  body main .grid .b .flex-content-b div h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+  body main .grid .b .content-2-flex-b {
+    margin-top: 0px;
+  }
+  body main .grid .b .transac-bottom {
+    margin-top: 20px;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(30, 30, 30);
+    width: 90%;
+    border-radius: 10px;
+  }
+  body main .grid .b .transac-bottom h2 {
+    font-weight: 400;
+  }
+  body main .grid .b .transac-bottom p {
+    margin-top: 4px;
+    color: white;
+  }
+  body main .grid .b .transac-bottom .interbleu {
+    color: #1970D6;
+    font-family: "Inter";
+  }
+  body main .grid .b .transac-bottom .intervert {
+    color: green;
+    font-family: "Inter";
+  }
+  body main .grid .b .transac-bottom .interviolet {
+    color: purple;
+    font-family: "Inter";
+  }
+  body main .grid .b .transac-bottom .intertrade {
+    font-family: "Inter";
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 18px;
+  }
+  body main .grid .b .transac-bottom img {
+    display: none;
+  }
+  body main .grid .b .transac-bottom .lezard {
+    width: 130px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  body main .grid .c .asset-contenant {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

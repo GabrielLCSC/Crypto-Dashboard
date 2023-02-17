@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+
 </head>
 <body>
     <header>
 
     </header>
     <main>
+        <img src="images/menu.png" alt="menu">
         <div class="grid">
             <div class="a">
                 <div class="logo">
                     <img class="img" src="images/logo.png" alt="logo">
                 </div>
+
                 <div class="btn-dash">
                     <div class="btn-a-dashboard">
                         <img src="images/dashboard.png" alt="dashboard">
@@ -65,13 +69,57 @@
                 </div>
                 <h2 class="pop">Total balance</h2>
                 <div class="flex-content-b">
-                    <h2 class="pop">0.767645</h2>
+                    
+                    <h2 class="pop">0.97894652 </h2>
+                    <h2 class="cardbtc">BTC</h2>
                     <div>
                         <h3 class="blackbg">Portfolio</h3>
                         <h3 class="pop">Funding</h3>
                         <h3 class="pop">Assets</h3>
                         <h3 class="pop">P2P</h3>
                     </div>
+                </div>
+                <h2 class="price">$40,123.56</h2>
+                <div class="graphic">
+                    <canvas id="graph"></canvas>
+                </div>
+                <div class="content-2-flex-b">
+                    <h2 class="pop">Recent transactions</h2>
+                    <h2 class="price">See all coins</h2>
+                </div>
+                <div class="transac-bottom">
+                    <img src="images/bitcoin.png" alt="btc">
+                    <div>
+                        <h2 class="inter">Bitcoin</h2>
+                        <p class="inter">BTC</p>
+                    </div>
+                    <div>
+                        <h2 class="inter">Market Cap</h2>
+                        <p class="interbleu">$40,243.70</p>
+                    </div>
+                    <div>
+                        <h2 class="inter"   >24h change</h2>
+                        <p class="intervert">+1,56</p>
+                    </div>
+                    <img class="lezard" src="images/petit-lezard.png" alt="">
+                    <h2 class="intertrade">Trade</h2>
+                </div>
+                <div class="transac-bottom">
+                    <img src="images/Etherium icon.png" alt="btc">
+                    <div>
+                        <h2 class="inter">Ethereum</h2>
+                        <p class="inter">ETH</p>
+                    </div>
+                    <div>
+                        <h2 class="inter">Market Cap</h2>
+                        <p class="interviolet">$40,243.70</p>
+                    </div>
+                    <div>
+                        <h2 class="inter"   >24h change</h2>
+                        <p class="intervert">+1,56</p>
+                    </div>
+                    <img class="lezard" src="images/petit-lezard.png" alt="">
+                    <h2 class="intertrade">Trade</h2>
                 </div>
             </div>
 
@@ -160,29 +208,31 @@
                 
 
                 <h2 class="pop">Assets</h2>
-                <div class="asset">
-                    <img src="images/Bitcoin-white.png" alt="Bitcoin-white">
-                    <p class="pop">Bitcoin</p>
-                    <div class="asset-flex">
-                        <h3 class="pop">121,6450.45</h3>
-                        <h3 class="pop">BTC</h3>
+                <div class="asset-contenant">
+                    <div class="asset">
+                        <img src="images/Bitcoin-white.png" alt="Bitcoin-white">
+                        <p class="pop">Bitcoin</p>
+                        <div class="asset-flex">
+                            <h3 class="pop">121,6450.45</h3>
+                            <h3 class="pop">BTC</h3>
+                        </div>
                     </div>
-                </div>
-
-
-                <div class="asset2">
-                    <img src="images/Etherium icon.png" alt="eth">
-                    <p class="pop">Ethereum</p>
-                    <div class="asset-flex">
-                        <h3 class="pop">121,6450.45</h3>
-                        <h3 class="pop">ETH</h3>
+    
+    
+                    <div class="asset2">
+                        <img src="images/Etherium icon.png" alt="eth">
+                        <p class="pop">Ethereum</p>
+                        <div class="asset-flex">
+                            <h3 class="pop">121,6450.45</h3>
+                            <h3 class="pop">ETH</h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
